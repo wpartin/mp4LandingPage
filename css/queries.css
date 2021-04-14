@@ -3,10 +3,23 @@
   .showcase header {
     padding: 40px;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .showcase,
+  .showcase header {
+    padding: 20px;
+  }
   .text h2 {
     font-size: 3em;
   }
   .text h3 {
     font-size: 2em;
+  }
+  .menu {
+    width: 200px;
+  }
+  .showcase.active {
+    right: 200px;
   }
 }
