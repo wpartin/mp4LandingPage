@@ -61,7 +61,7 @@ body {
 }
 
 .text h3 {
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 500;
   line-height: 1em;
   text-transform: uppercase;
@@ -99,6 +99,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  color: #fff;
+  margin-right: 40px;
+  font-size: 150%;
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: translateY(-15%);
 }
 
 .overlay {
@@ -128,8 +141,45 @@ body {
 
 .toggle i {
   font-size: 150%;
+  z-index: 2000;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+}
+
+.menu ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-bottom: 40px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 130%;
+}
+
+.menu ul li a:hover {
+  color: #039ee6;
 }
 
 .hidden {
   display: none;
+}
+
+.showcase.active {
+  right: 300px;
 }
