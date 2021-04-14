@@ -1,9 +1,11 @@
 "use strict";
 
+// Let's get our DOM items
 const showcase = document.querySelector(".showcase");
 const bars = document.getElementById("bars");
 const close = document.getElementById("close");
 
+// These are our two functions
 function openMenu(e) {
   e.preventDefault();
   showcase.classList.add("active");
@@ -17,6 +19,7 @@ function closeMenu(e) {
   bars.classList.remove("hidden");
 }
 
+// Here are our event listeners for click & touch :)
 bars.addEventListener("click", openMenu);
 close.addEventListener("click", closeMenu);
 bars.addEventListener("touchend", openMenu);
